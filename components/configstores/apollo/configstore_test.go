@@ -22,7 +22,6 @@ import (
 	"encoding/json"
 	"errors"
 	"io/ioutil"
-	rlog "mosn.io/pkg/log"
 	"net/http"
 	"reflect"
 	"testing"
@@ -208,7 +207,7 @@ func TestConfigStore_Init(t *testing.T) {
 
 		// 2. test the ConfigStore,which has a MockRepository in it
 		// init
-		log.DefaultLogger.SetLogLevel(rlog.Level(log.DEBUG))
+		log.DefaultLogger.SetLogLevel(log.DEBUG)
 		err := store.Init(cfg)
 		assert.NotNil(t, err)
 	})
@@ -225,7 +224,7 @@ func TestConfigStore_Init(t *testing.T) {
 
 		// 2. test the ConfigStore,which has a MockRepository in it
 		// init
-		log.DefaultLogger.SetLogLevel(rlog.Level(log.DEBUG))
+		log.DefaultLogger.SetLogLevel(log.DEBUG)
 		err := store.Init(cfg)
 		assert.Error(t, err)
 	})
@@ -242,7 +241,7 @@ func TestConfigStore_Init(t *testing.T) {
 
 		// 2. test the ConfigStore,which has a MockRepository in it
 		// init
-		log.DefaultLogger.SetLogLevel(rlog.Level(log.DEBUG))
+		log.DefaultLogger.SetLogLevel(log.DEBUG)
 		err := store.Init(cfg)
 		assert.Nil(t, err)
 	})
