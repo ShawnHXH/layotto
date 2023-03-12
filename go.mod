@@ -1,6 +1,6 @@
 module mosn.io/layotto
 
-go 1.18
+go 1.19
 
 require (
 	github.com/SkyAPM/go2sky v0.5.0
@@ -335,10 +335,10 @@ require (
 
 replace (
 	github.com/Shopify/sarama => github.com/Shopify/sarama v1.24.0
+	github.com/dubbogo/go-zookeeper => github.com/dubbogo/go-zookeeper v1.0.3
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.7.0
 	github.com/klauspost/compress => github.com/klauspost/compress v1.13.0
 	mosn.io/layotto/components => ./components
 	mosn.io/layotto/spec => ./spec
 	mosn.io/proxy-wasm-go-host => github.com/layotto/proxy-wasm-go-host v0.1.1-0.20221229094558-d39f73d2858d
-	github.com/dubbogo/go-zookeeper => github.com/dubbogo/go-zookeeper v1.0.3
 )
